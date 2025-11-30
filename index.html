@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/rcb-logo.png"/>
+    <link rel="stylesheet" href="style.css"/>
+
+
+    <title>Document</title>
+</head>
+<body>
+    <header class="navbar">
+        <div class="nav-left">
+          <img src="./images/rcb-logo-new.png" alt="rcb-logo" class="logo-image"/>
+          
+          <div class="nav-title">ROYAL CHALLENGERS BENGALURU FAN CLUB</div>
+        </div>
+        <nav class="nav-menu" id="navMenu">
+          <a href="home">Home</a>
+          <a href="squad">Squad</a>
+          <a href="schedule">Schedule</a>
+          <a href="stats">Stats</a>
+          <a href="history">History</a>
+          <a href="record">Record</a>
+          <a href="gallery">Gallery</a>
+          <a href="news">News</a>
+          <a href="fan">Fan Zone</a>
+          <a href="contact">Contact</a>
+        </nav>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+          </button>
+    </header>
+    <section id="home" class="hero">
+      <img src="./images/rcbw.avif" class="hero-bg" alt="">
+      <div class="hero-content">
+        <div class="hero-left">
+          <div class="hero-tag">Indian Premier League . RCB</div>
+          <h1 class="hero-title">
+            Bleed <span>Red & Gold</span>.<br>Play Bold.
+          </h1>
+          <p class="hero-text">
+            Welcome to the Royal Challengers Bengaluru Fan Hub. Fixture, Squad,
+            stats, news & fan zone all in one place!
+          </p>
+          <div class="hero-buttons">
+            <a href="#squad" class="btn">View Squad</a>
+            <a href="#schedule" class="btn secondary">Next Match</a>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="hero-card">
+            <div class="hero-card-header">
+              <div class="hero-card-title">Upcoming Fixture</div>
+              <span class="hero-status">Fan View</span>
+            </div>
+
+            <div class="hero-card-body">
+              <table class="hero-table">
+                <tr><th>Match</th><td id="nextMatchMeta">RCB VS PBKS</td></tr>
+                <tr><th>Date</th><td>10 Apr</td></tr>
+                <tr><th>Venue</th><td>Bengaluru</td></tr>
+                <tr><th>Time</th><td>7:30 PM</td></tr>
+              </table>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+    <section id="squad">
+    <h2>RCB Squad</h2>
+    <p class="section-subtitle">
+      A sample squad section. Replace with the current season's list from
+      official sources.
+    </p>
+
+    <div class="grid grid-3" id="squadGrid">
+      
+    </div>
+  </section>
+    <section id="schedule">
+      <h2>Match Schedule</h2>
+      <p class="section-subtitle">
+        Demo fixtures for the season. You can update these with the actual
+        IPL timetable.
+      </p>
+      
+      <div style="overflow-x:auto;">
+        <table class="schedule-table">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Match</th>
+              <th>Venue</th>
+              <th>Time</th>
+              <th>Result</th>
+            </tr>
+          </thead>
+          <tbody id="scheduleBody">
+
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section id="stats">
+      <h2>Team Stats Snapshots</h2>
+      <p class="section-subtitle">
+        Highlight RCB history and key records. Values below are placeholders – update with real stats.
+      </p>
+
+      <div class="stats-wrapper">
+        <div class="stats-cards">
+          <div class="stat-card">
+            <div class="stat-label">IPL Titles</div>
+            <div class="stat-value">1</div>
+            <div class="stat-note">First tiles in 2025*</div>   
+          </div>
+          <div class="stat-card">
+            <div class="stat-label">Playoffs Appearances</div>
+            <div class="stat-value">10</div>
+            <div class="stat-note">Across IPL seasons*</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-label">Highest Team Total</div>
+            <div class="stat-value">263</div>
+            <div class="stat-note">vs Pune (2013)</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-label">Iconic Batter</div>
+            <div class="stat-value">Virat Kohli</div>
+            <div class="stat-note">Most runs for RCB</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-label">Home Ground</div>
+            <div class="stat-value">MC</div>
+            <div class="stat-note">M. Chinnaswamy Stadium</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-label">Motto</div>
+            <div class="stat-value">Play Bold</div>
+            <div class="stat-note">Namma Team, Namma RCB</div>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+    
+    <section id="history">
+      <h2>Team History</h2>
+      <p class="section-subtitle">
+        A brief timeline of RCB – from 2008 beginnings to modern Play Bold era.
+      </p>
+
+      <div class="card">
+        <ul class="history-list">
+          <li><span class="year">2008:</span> RCB joins the inaugural IPL season.</li>
+          <li><span class="year">2009-2016:</span>Multiple playoff and final appearances, building a loyal fanbase.</li>
+          <li><span class="year">2013:</span> Record 263/5 vs Pune – one of the highest T20 totals.</li>
+          <li><span class="year">Play Bold Era:</span> Iconic performances, big-hitting line-ups, and passionate supporters.</li>
+          <li><span class="year">Today:</span> Known for attacking batting, star power, and Namma Bengaluru connect.</li>
+        </ul>
+        
+      </div>
+    </section>
+
+    <section id="records">
+      <h2>Teams Records</h2>
+      <p class="section-subtitle">
+        Highlight individual and team milestones. These are placeholders — fill real data from official stats.
+      </p>
+
+      <div class="grid grid-3">
+        <div class="card record-card">
+          <h3>Most Runs (for RCB)</h3>
+          <p class="record-main">Virat Kohli</p>
+          <p class="record-sub">8661 run</p>
+        </div>
+        <div class="card record-card">
+          <h3>Most Wickets (for RCB)</h3>
+          <p class="record-main">Legendary RCB Bowler</p>
+          <p class="record-sub">Josh Hazlewood & 22</p>
+        </div>
+        <div class="card report-card">
+          <h3>Highest Individual Score</h3>
+          <p class="record-main">Virat Kohli • 8661</p>
+          <p class="record-sub">Virat kohli score 8661 runs from 2008-2025 </p>
+        </div>
+        <div class="card report-card">
+          <h3>Best Bowling Figures</h3>
+          <p class="record-main">Josh Hazlewood • 4/33</p>
+          <p class="record-sub">4 wickets for 33 runs against Rajasthan Royals</p>
+        </div>
+        <div class="card report-card">
+          <h3>Most Sixes in a Season</h3>
+          <p class="record-main">Phil Salt</p>
+          <p class="record-sub">13 & 2025.</p>
+        </div>
+        <div class="card record-card">
+          <h3>Partnership Records</h3>
+          <p class="record-main">Virat Kohli and AB de Villiers </p>
+          <p class="record-sub">229-run stand for the second wicket against the now-defunct Gujarat Lions in the 2016 season</p>
+        </div>
+      </div>
+    </section>
+    <section id="gallery">
+      <h2>Gallery</h2>
+      <p class="section-subtitle">
+        Add your favourite match moments, stadium shots, wallpapers and fan clicks.
+      </p>
+
+      <div class="gallery-grid">
+        <figure class="gallery-item">
+          <img src="./images/rcbw.avif" alt="RCB celebration"/>
+          <figcaption>RCB celebration moment</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="./images/Chinnaswami.jpg.avif" alt="chinnaswamy crowd"/>
+          <figcaption>Chinnaswamy crowd</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="./images/virat-kohli-rcb.jpg.avif" alt="RCB batting action"/>
+          <figcaption>RCB batting action</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="news">
+      <h2>News &amp; Highlights</h2>
+      <p class="section-subtitle">
+        Manually add 3–6 key news cards and link them to trusted cricket news sites.
+      </p>
+
+      <div class="news-list">
+        <artice class="card news-item">
+          <h3>RCB's Remarkable Season Run</h3>
+          <div class="news-meta">Qualifier Journey • Fan Article</div>
+          <p>
+            
+          </p>
+          <a href="https://www.instagram.com/reel/DKctxlhh18m/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" class="btn secondary news-btn">
+            Stadium Story
+          </a>
+        </artice>
+        <article class="card news-item">
+        <h3>Chinnaswamy Roars</h3>
+        <div class="news-meta">Home Ground • Atmosphere</div>
+        <p>
+          Known for electric crowds and short boundaries
+        </p>
+        <a href="https://www.instagram.com/reel/DQrvmkFAeZG/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" class="btn secondary news-btn">
+          Stadium Story
+        </a>
+      </article>
+
+        <article class="card news-item">
+          <h3>Fan Stories: Namma RCB</h3>
+          <div class="news-meta">Community • Fan Culture</div>
+          <p>
+            virat kohli rcb moments
+            
+          </p>
+          <a href="https://www.instagram.com/reel/DQreSOUgQGY/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ=="class="btn secondary news-btn">
+            View Stories
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <section id="fan">
+      <h3>Fan Zone</h3>
+      
+
+      <div class="fan-grid">
+        <div class="card">
+          <h3 class="card-title">Fan Poll : Favourite RCB players</h3>
+          <p class="card-subtext">
+            
+          </p>
+
+          <form id="pollForm" class="poll-form">
+            <div class="poll-options">
+              <label><input type="radio" name="player" value="Virat Kohli"/>Virat kohli</label>
+              <label><input type="radio" name="player" value="Phil Salt"/>Phil Salt</label>
+              <label><input type="radio" name="player" value="Rajat Patidar"/>Rajat patidar</label>
+              <label><input type="radio" name="player" value="jitesh sharma"/>jitesh sharma</label>
+              <label><input type="radio" name="player" value="Others" />Others</label>
+            </div>
+            <button type="submit" class="btn poll-btn">
+              Submit Vote
+            </button>
+          </form>
+
+          <p id="pollResult" class="poll-result">
+             Thanks for voting! 🔥
+          </p>
+        </div>
+
+        <div class="card">
+          <h3 class="card-title">Stay Connected</h3>
+          <p class="card-subtext">
+            Follow official and community accounts for RCB updates, memes and match
+          discussions.
+          </p>
+          <div class="social-links">
+            <a class="social-pill" href="https://www.royalchallengers.com/" target="_blank" rel="noopener">
+             Official RCB Site 
+            </a>
+            <a class="social-pill" href="https://www.instagram.com/royalchallengers.bengaluru/" target="_blank" rel="noopener">
+              Instagram Fan Page
+            </a>
+            <a class="social-pill" href="https://x.com/RCBTweets" target="_blank" rel="noopener">
+              X (Twitter) Updates
+            </a>
+            <a class="social-pill" href="https://youtu.be/Jqo1BM0TfBY?si=rhEEBWO42cnadOkB" target="_blank" rel="noopener">
+              YouTube Highlights
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <h3>Contact &amp; Feedback</h3>
+      <p class="section-subtitle">
+        
+      </p>
+
+      <div class="contact-wrapper">
+        <div class="card">
+          <form id="contactForm">
+            <div>
+              <label for="name">Name</label>
+              <input id="name" required />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input id="email" type="email" required />
+            </div>
+            <div>
+              <label for="favPlayer">Favourite Player</label>
+              <select id="favPlayer">
+                <option>Virat Kohli</option>
+              <option>Faf du Plessis</option>
+              <option>Glenn Maxwell</option>
+              <option>Mohammed Siraj</option>
+              <option>Rajat Patidar</option>
+              <option>Others</option>
+              </select>
+            </div>
+            <div>
+              <label for="message">Your Feedback</label>
+              <textarea id="message" required></textarea>
+            </div>
+            <button type="submit" class="btn contact-btn">
+              Send Feedback
+            </button>
+            <p id="contactResult" class="contact-result">
+              Feedback submitted (demo). Thank you for helping us Play Bold! 🙌
+            </p>
+          </form>
+        </div>
+        <div>
+          
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <span>@ 2025 RCB Fan project by Omkar Muske.</span>
+      <span>Unofficial fan-made site. All trademarks belong to BCCI &amp; respective owners.</span>
+    </footer>
+
+    <script src="script.js"></script> 
+</body>
+</html>
+
+
+
+
